@@ -10,12 +10,9 @@ Panels:
         - /Local Planner1/LocalPath1
         - /Local Planner1/LocalCostmap1
         - /Global Planner1/GlobalPath1
-        - /Robot1
         - /Robot1/Robot Footprint1
-        - /Obstacle1
         - /Obstacle1/Footprint estimation1
         - /Obstacle1/Marker1
-        - /RobotModel1
       Splitter Ratio: 0.347747743
     Tree Height: 772
   - Class: rviz/Selection
@@ -93,8 +90,7 @@ Visualization Manager:
           Marker Topic: /move_base/TebLocalPlannerROS/teb_markers
           Name: TebMarker
           Namespaces:
-            PointObstacles: true
-            TebContainer: true
+            {}
           Queue Size: 100
           Value: true
         - Alpha: 1
@@ -194,7 +190,7 @@ Visualization Manager:
           Enabled: true
           Invert Rainbow: false
           Max Color: 255; 255; 255
-          Max Intensity: 999999
+          Max Intensity: 4.96218754e-37
           Min Color: 0; 0; 0
           Min Intensity: 0
           Name: LaserScan
@@ -329,18 +325,53 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: false
+      Enabled: true
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        caster_wheel_back:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        caster_wheel_front:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        hokuyo_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
-      Value: false
+      Value: true
       Visual Enabled: true
   Enabled: true
   Global Options:
@@ -374,9 +405,9 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.00905871
-        Y: -0.336839974
-        Z: 8.21106052
+        X: 2.46301675
+        Y: -0.741314769
+        Z: 8.21066284
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
@@ -385,7 +416,7 @@ Visualization Manager:
       Pitch: 1.56979632
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.67544079
+      Yaw: 4.68543434
     Saved: ~
 Window Geometry:
   Displays:
